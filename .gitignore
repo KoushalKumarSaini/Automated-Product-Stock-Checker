@@ -1,0 +1,14 @@
+# Ignore operating system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Python-specific files
+*.pyc
+__pycache__/
+
+# Ignore specific files from your project
+.wdm
+chromedriver.exe
+stock_status.json
+stock_status.txt
+
