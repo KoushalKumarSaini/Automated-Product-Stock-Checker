@@ -19,7 +19,9 @@ The script runs a continuous loop that periodically scrapes the product's webpag
 
 3. smtplib: Standard Python library for sending email notifications.
 
-4. JSON: For simple data persistence.
+4. python-dotenv: To securely manage environment variables.
+
+5. JSON: For simple data persistence.
 
 🚀 Getting Started
 To run this project locally, follow these steps:
@@ -33,12 +35,14 @@ cd Automated-Product-Stock-Checker
 
 pip install -r requirements.txt
 
-3. Configure Email Settings:
-Open the check_stock.py file and update the following variables with your own email credentials and the recipient's address. Note: For Gmail, you will need to generate an App Password to use this feature.
+3. Configure Environment Variables:
+To keep your sensitive information secure, you will use a .env file instead of hardcoding credentials in the script. Create a file named .env in the same directory as your check_stock.py file. Add the following lines, replacing the placeholder values with your actual credentials:
 
-SENDER_EMAIL = "your_email@gmail.com"
-SENDER_PASSWORD = "your_app_password"
-RECEIVER_EMAIL = "recipient_email@gmail.com"
+SENDER_EMAIL="your_email@gmail.com"
+SENDER_PASSWORD="your_app_password"
+RECEIVER_EMAIL="your_email@gmail.com"
+
+Note: For SENDER_PASSWORD, you need to use a Google App Password, not your regular Gmail password. You can generate one from your Google Account security settings.
 
 4. Run the script:
 
