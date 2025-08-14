@@ -11,4 +11,5 @@ __pycache__/
 chromedriver.exe
 stock_status.json
 stock_status.txt
+/.env
 
